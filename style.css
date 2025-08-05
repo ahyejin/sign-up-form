@@ -51,17 +51,42 @@ img {
     font-size: 1.1em;
     padding: 30px;
 }
-form{
-    max-width: 60%;
-    border: 1px solid red;
+
+form {
+    min-width: 60%;
+    //border: 1px solid red;
 }
 
-form div.horizontal-align{
-    display:flex;
-    gap:150px;
+form div.horizontal-align {
+    display: flex;
+    gap: 150px;
 }
-form div.horizontal-align div{
+
+form div.horizontal-align div {
     display: flex;
     flex-direction: column;
+
+}
+form .top-text{
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 0.75em;
+    font-weight:lighter;
+    text-shadow: 0 0 1.5px black;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+
+form input {
+    border:1px solid #E5E7EB;
+    padding: 0.25em 0.5em;
+    margin-bottom: 20px;
+}
+input:focus{
+    outline: none;
+    border:1px solid blue;
+    box-shadow: 0 0 3px 0.5px blue;
 
 }
