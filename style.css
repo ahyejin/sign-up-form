@@ -10,14 +10,14 @@
 
 img {
     height: 100vh;
-    width: 25vw;
+    width: 28vw;
     min-width: 300px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    width: 75vw;
+    width: 72vw;
 }
 
 .header-part {
@@ -28,6 +28,7 @@ img {
     font-size: 1.1em;
     height: 33vh;
     padding: 30px;
+    text-shadow: 0 0 0.5px black;
 }
 
 .header-part .top-text {
@@ -42,21 +43,22 @@ img {
 .header-part .bottom-text {
     margin-bottom: 20px;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+    flex: 1;
 
-.form-part {
+}
+
+form .input-fields {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     line-height: 1.25;
     font-size: 1.1em;
-    padding: 30px;
+    padding: 15px 30px;
 }
-
-form {
-    min-width: 60%;
-    //border: 1px solid red;
-}
-
 form div.horizontal-align {
     display: flex;
     gap: 150px;
@@ -67,26 +69,49 @@ form div.horizontal-align div {
     flex-direction: column;
 
 }
-form .top-text{
+
+form .top-text {
     margin-bottom: 20px;
 }
 
 form label {
     font-size: 0.75em;
-    font-weight:lighter;
+    font-weight: lighter;
     text-shadow: 0 0 1.5px black;
     opacity: 0.6;
     margin-bottom: 5px;
 }
 
 form input {
-    border:1px solid #E5E7EB;
+    border: 1px solid #E5E7EB;
     padding: 0.25em 0.5em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-input:focus{
+
+input:focus {
     outline: none;
-    border:1px solid blue;
+    border: 1px solid blue;
     box-shadow: 0 0 3px 0.5px blue;
 
+}
+
+form .button-part {
+    background-color: rgb(245, 236, 236);
+    padding: 30px;
+    flex: 1;
+
+}
+form button {
+    padding: 0.7em 2.8em;
+    background-color: #596D48;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.button-part a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 900;
 }
