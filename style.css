@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff') format('woff'),
+        url('fonts/Norse-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 .body {
     display: flex;
 }
@@ -43,12 +52,11 @@ img {
 .header-part .bottom-text {
     margin-bottom: 20px;
 }
+
 form {
     display: flex;
     flex-direction: column;
-    min-width: 60%;
     flex: 1;
-
 }
 
 form .input-fields {
@@ -59,6 +67,7 @@ form .input-fields {
     font-size: 1.1em;
     padding: 15px 30px;
 }
+
 form div.horizontal-align {
     display: flex;
     gap: 150px;
@@ -101,17 +110,62 @@ form .button-part {
     flex: 1;
 
 }
+
 form button {
     padding: 0.7em 2.8em;
     background-color: #596D48;
     color: white;
-    border-radius: 10px;
     font-weight: 600;
     font-size: 15px;
     margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #596D48;
 }
-.button-part a{
+
+.button-part a {
     text-decoration: none;
     color: #596D48;
     font-weight: 900;
+}
+
+.side-image {
+    position: relative;
+}
+
+.side-image .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 100px;
+    color: white;
+    gap: 10px;
+}
+
+.side-image .pic-credit {
+    bottom: 20px;
+    left:110px;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+
+}
+
+.pic-credit a {
+    color: white;
+}
+
+.logo-image {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo p {
+    font-family: 'Norse';
+    margin-left: -120px;
+    font-size: 60px;
 }
