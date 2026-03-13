@@ -7,12 +7,12 @@ This project focuses on practicing **HTML forms**, **CSS styling**, and **basic 
 👉 [View the Sign-Up Form](https://ahyejin.github.io/sign-up-form/)
 
 ## ✨ Features
-- 📄 Structured sign-up form layout
-- 🧩 Input fields for user information
-- 🔒 Password and confirm-password fields
-- ⚠️ Basic form validation (client side)
-- 🎨 Clean and modern UI styling
-- 📱 Responsive layout
+- Structured sign-up form layout
+- Input fields for user information
+- Password and confirm-password fields
+- Basic form validation (client side)
+- Clean and modern UI styling
+- Responsive layout
 
 ## 🛠️ Technologies Used
 - HTML  
